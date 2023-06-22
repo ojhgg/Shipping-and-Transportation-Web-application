@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="942d1756-3466-4f88-9e2b-f0b5312cb35d" name="变更" comment="微服务">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/DepositApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/config/GlobalCorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/config/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/controller/ApplicationContextHelperUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Courier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/CourierBoxType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/CourierServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Customs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Dimension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Eei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Operations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Parcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Passport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/ShipperAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/entity/Weight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/mapper/BillingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/mapper/CourierMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/mapper/ParcelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/mapper/ShipmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/mapper/ShipperAccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Billing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Courier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Courierboxtype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Courierservicetype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Parcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Shipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/Shipperaccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/vo/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/vo/param/CreateOrderParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/vo/param/LoginParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/vo/param/Param.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/vo/param/Param2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/vo/param/Parcels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/java/com/vo/param/RegisterParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Order/src/test/java/com/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/src/main/java/org/ejavaexample/auth/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/src/main/java/org/ejavaexample/auth/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/src/main/java/org/ejavaexample/auth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/src/main/java/org/ejavaexample/auth/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth_service/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2N2wFsXtu50Qpq5TKpSTjqzHW8u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Notification.DoNotAsk-null": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "D:/大三下实训/personal2/Order/src/main/java/com/entity",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "ff2508c79c6621a34a7fdc99c67b10ab",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\大三下实训\sample_microservices\auth_service" />
+      <recent name="D:\大三下实训\personal2\order_service" />
+      <recent name="D:\大三下实训\personal2\user_service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\大三下实训\personal2\user_service" />
+      <recent name="D:\大三下实训\personal2" />
+      <recent name="D:\大三下实训\deposit\src\main" />
+      <recent name="D:\大三下实训\deposit\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="order_service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="order_service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="测试1" type="JUnit" factoryName="JUnit">
+      <module name="order_service" />
+      <option name="PACKAGE_NAME" value="com.example.deposit" />
+      <option name="MAIN_CLASS_NAME" value="com.example.deposit.DepositApplicationTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="order_service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="order_service" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="deposit [clean]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="deposit [install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="deposit [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ejavaexample.auth.AuthServiceApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ejavaexample.gateway.GatewayServiceApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.DepositApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudEruekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.SpringcloudEruekaApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringcloudEruekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.SpringcloudEruekaApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/main/vue/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/main/vue/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.测试1" />
+      <item itemvalue="Maven.deposit [install]" />
+      <item itemvalue="Maven.deposit [spring-boot:run]" />
+      <item itemvalue="Maven.deposit [clean]" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.lint" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServiceApplication" />
+      <item itemvalue="Spring Boot.OrderServiceApplication" />
+      <item itemvalue="Spring Boot.SpringcloudEruekaApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="942d1756-3466-4f88-9e2b-f0b5312cb35d" name="变更" comment="" />
+      <created>1678875387364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678875387364</updated>
+      <workItem from="1678875388559" duration="1862000" />
+      <workItem from="1678877286678" duration="282000" />
+      <workItem from="1678877588776" duration="11301000" />
+      <workItem from="1679631380173" duration="369000" />
+      <workItem from="1679631827843" duration="191000" />
+      <workItem from="1679633263174" duration="570000" />
+      <workItem from="1681226802810" duration="3648000" />
+      <workItem from="1681233326220" duration="1861000" />
+      <workItem from="1681461940637" duration="1766000" />
+      <workItem from="1681478880556" duration="8198000" />
+      <workItem from="1681571021866" duration="3690000" />
+      <workItem from="1681619199424" duration="14355000" />
+      <workItem from="1681908367538" duration="3933000" />
+      <workItem from="1681919506263" duration="438000" />
+      <workItem from="1681919976673" duration="1206000" />
+      <workItem from="1681979321743" duration="382000" />
+      <workItem from="1681980317049" duration="1394000" />
+      <workItem from="1681992675246" duration="2065000" />
+      <workItem from="1682086504382" duration="32602000" />
+      <workItem from="1682339708974" duration="1350000" />
+      <workItem from="1682344168122" duration="1299000" />
+      <workItem from="1682402931174" duration="79000" />
+      <workItem from="1682490448844" duration="609000" />
+      <workItem from="1682763979379" duration="1211000" />
+      <workItem from="1683928598162" duration="1087000" />
+      <workItem from="1684331544416" duration="424000" />
+      <workItem from="1684573741821" duration="3989000" />
+      <workItem from="1684739565517" duration="1399000" />
+      <workItem from="1685339065364" duration="8177000" />
+      <workItem from="1685466753874" duration="48368000" />
+      <workItem from="1685523731407" duration="34433000" />
+      <workItem from="1685774026193" duration="1055000" />
+      <workItem from="1685861599137" duration="2539000" />
+      <workItem from="1685964503591" duration="604000" />
+      <workItem from="1686204872632" duration="3639000" />
+      <workItem from="1686556330116" duration="28905000" />
+      <workItem from="1686601560251" duration="23320000" />
+      <workItem from="1686680119630" duration="296000" />
+      <workItem from="1686689096959" duration="6597000" />
+    </task>
+    <task id="LOCAL-00001" summary="首次">
+      <created>1678885797778</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678885797778</updated>
+    </task>
+    <task id="LOCAL-00002" summary="首次">
+      <created>1679631964273</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679631964273</updated>
+    </task>
+    <task id="LOCAL-00003" summary="后端">
+      <created>1679633363443</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679633363443</updated>
+    </task>
+    <task id="LOCAL-00004" summary="登录/注册，鉴权">
+      <created>1681488558170</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681488558170</updated>
+    </task>
+    <task id="LOCAL-00005" summary="仓库初始化">
+      <created>1681910017997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681910017997</updated>
+    </task>
+    <task id="LOCAL-00006" summary="仓库初始化">
+      <created>1681919941741</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681919941741</updated>
+    </task>
+    <task id="LOCAL-00007" summary="仓库初始化">
+      <created>1681920809626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681920809626</updated>
+    </task>
+    <task id="LOCAL-00008" summary="出库">
+      <created>1682087205493</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682087205493</updated>
+    </task>
+    <task id="LOCAL-00009" summary="出库">
+      <created>1682087525383</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682087525383</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修改密码/修改个人信息">
+      <created>1682246607672</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682246607672</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修改密码/修改个人信息">
+      <created>1682314241812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682314241812</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修改密码/修改个人信息">
+      <created>1682314366961</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682314366961</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修改个人信息bug">
+      <created>1682330936782</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682330936783</updated>
+    </task>
+    <task id="LOCAL-00014" summary="鉴权，用户功能">
+      <created>1685345853498</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685345853498</updated>
+    </task>
+    <task id="LOCAL-00015" summary="追踪，创建订单，登录，注册">
+      <created>1685514714407</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685514714407</updated>
+    </task>
+    <task id="LOCAL-00016" summary="追踪，创建订单，登录，注册">
+      <created>1686558311017</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686558311017</updated>
+    </task>
+    <task id="LOCAL-00017" summary="追踪，创建订单，登录，注册">
+      <created>1686561224101</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686561224101</updated>
+    </task>
+    <task id="LOCAL-00018" summary="追踪，创建订单，登录，注册">
+      <created>1686565906598</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686565906598</updated>
+    </task>
+    <task id="LOCAL-00019" summary="修改bug">
+      <created>1686566578632</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686566578632</updated>
+    </task>
+    <task id="LOCAL-00020" summary="修改bug2">
+      <created>1686567231480</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686567231480</updated>
+    </task>
+    <task id="LOCAL-00021" summary="修改bug3">
+      <created>1686587934291</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686587934291</updated>
+    </task>
+    <task id="LOCAL-00022" summary="修改bug4">
+      <created>1686588860606</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1686588860606</updated>
+    </task>
+    <task id="LOCAL-00023" summary="修改bug4">
+      <created>1686680247169</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686680247169</updated>
+    </task>
+    <task id="LOCAL-00024" summary="修改bug4">
+      <created>1686691881687</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686691881687</updated>
+    </task>
+    <task id="LOCAL-00025" summary="微服务">
+      <created>1686694183600</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686694183600</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src/main/vue" />
+    </ignored-roots>
+    <MESSAGE value="首次" />
+    <MESSAGE value="后端" />
+    <MESSAGE value="登录/注册" />
+    <MESSAGE value="登录/注册，鉴权" />
+    <MESSAGE value="登录接口修改" />
+    <MESSAGE value="仓库初始化" />
+    <MESSAGE value="出库" />
+    <MESSAGE value="修改密码/修改个人信息" />
+    <MESSAGE value="修改个人信息bug" />
+    <MESSAGE value="鉴权，用户功能" />
+    <MESSAGE value="追踪，创建订单，登录，注册" />
+    <MESSAGE value="修改bug" />
+    <MESSAGE value="修改bug2" />
+    <MESSAGE value="修改bug3" />
+    <MESSAGE value="修改bug4" />
+    <MESSAGE value="微服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="微服务" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user_service/src/main/java/com/service/impl/UserServiceImpl.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user_service/src/main/java/com/config/AuthenticationInterceptor.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="method" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

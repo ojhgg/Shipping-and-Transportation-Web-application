@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: API-GATEWAY
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    gateway:
+       routes:
+        - id: ORDER-SERVICE
+          uri: http://localhost:9999
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - AddResponseHeader=my-response-header,product.ejavaexample.org
+            - StripPrefix=1
+
+            
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/user/**
+          filters:
+            - AddResponseHeader=my-response-header,user.ejavaexample.org
+            - PrefixPath=/api
+            - MyPreFilter 
+
+        - id: AUTH-SERVICE
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
+          filters:
+            - AddResponseHeader=my-response-header,product.ejavaexample.org
+            - PrefixPath=/api 
+
+            
+            
+#        - id: SHOPPING-CART-SERVICE
+#          uri: lb://SHOPPING-CART-SERVICE
+#          predicates:
+#            - Path=/api/cart/**
+server:
+  port: 9999
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+      
