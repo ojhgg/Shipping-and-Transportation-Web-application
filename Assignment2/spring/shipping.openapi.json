@@ -1,0 +1,470 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "shipping",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "user"
+    }
+  ],
+  "paths": {
+    "/user/register": {
+      "post": {
+        "summary": "register",
+        "x-apifox-folder": "user",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "user"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "header",
+            "description": "",
+            "required": false,
+            "example": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "createdAt": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "contactname": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "address",
+                  "createdAt",
+                  "password",
+                  "contactname"
+                ],
+                "x-apifox-orders": [
+                  "id",
+                  "address",
+                  "createdAt",
+                  "password",
+                  "contactname"
+                ],
+                "x-apifox-ignore-properties": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status_code": {
+                      "type": "boolean"
+                    }
+                  },
+                  "x-apifox-orders": [
+                    "status_code"
+                  ],
+                  "required": [
+                    "status_code"
+                  ],
+                  "x-apifox-ignore-properties": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/2747517/apis/api-83312398-run"
+      }
+    },
+    "/user/login": {
+      "post": {
+        "summary": "login",
+        "x-apifox-folder": "user",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "user"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                },
+                "x-apifox-orders": [
+                  "username",
+                  "password"
+                ],
+                "required": [
+                  "username",
+                  "password"
+                ],
+                "x-apifox-ignore-properties": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "null"
+                    },
+                    "message": {
+                      "type": "null"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "status_code": {
+                          "type": "boolean"
+                        },
+                        "token": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "status_code",
+                        "token"
+                      ],
+                      "x-apifox-ignore-properties": [],
+                      "x-apifox-orders": [
+                        "status_code",
+                        "token"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "message",
+                    "data"
+                  ],
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": [
+                    "success",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/2747517/apis/api-83312688-run"
+      }
+    },
+    "/user/tracking": {
+      "post": {
+        "summary": "tracking",
+        "x-apifox-folder": "user",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "user"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "itemid": {
+                    "type": "string"
+                  }
+                },
+                "x-apifox-orders": [
+                  "itemid"
+                ],
+                "required": [
+                  "itemid"
+                ],
+                "x-apifox-ignore-properties": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string"
+                    },
+                    "status_code": {
+                      "type": "string"
+                    }
+                  },
+                  "x-apifox-orders": [
+                    "address",
+                    "status_code"
+                  ],
+                  "required": [
+                    "address",
+                    "status_code"
+                  ],
+                  "x-apifox-ignore-properties": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/2747517/apis/api-83312740-run"
+      }
+    },
+    "/user/createOrder": {
+      "post": {
+        "summary": "createOrder",
+        "x-apifox-folder": "user",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "user"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "deliveryinstructions": {
+                    "type": "string"
+                  },
+                  "returnto": {
+                    "type": "string"
+                  },
+                  "shipfrom": {
+                    "type": "string"
+                  },
+                  "shipto": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "parcels": {
+                    "type": "object",
+                    "properties": {
+                      "boxtype": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "weight": {
+                        "type": "string"
+                      },
+                      "parcelsid": {
+                        "type": "string"
+                      },
+                      "quantity": {
+                        "type": "string"
+                      }
+                    },
+                    "x-apifox-refs": {},
+                    "x-apifox-orders": [
+                      "boxtype",
+                      "description",
+                      "weight",
+                      "parcelsid",
+                      "quantity"
+                    ],
+                    "required": [
+                      "boxtype",
+                      "description",
+                      "weight",
+                      "parcelsid",
+                      "quantity"
+                    ],
+                    "x-apifox-ignore-properties": []
+                  }
+                },
+                "required": [
+                  "deliveryinstructions",
+                  "returnto",
+                  "shipfrom",
+                  "shipto",
+                  "type",
+                  "parcels"
+                ],
+                "x-apifox-orders": [
+                  "deliveryinstructions",
+                  "returnto",
+                  "shipfrom",
+                  "shipto",
+                  "type",
+                  "parcels"
+                ],
+                "x-apifox-ignore-properties": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "null"
+                    },
+                    "message": {
+                      "type": "null"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "status_code": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "status_code"
+                      ],
+                      "x-apifox-ignore-properties": [],
+                      "x-apifox-orders": [
+                        "status_code"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "message",
+                    "data"
+                  ],
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": [
+                    "success",
+                    "message",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "success": null,
+                      "message": null,
+                      "data": {
+                        "status_code": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/2747517/apis/api-85488598-run"
+      }
+    },
+    "/user/billing": {
+      "post": {
+        "summary": "billing",
+        "x-apifox-folder": "user",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "user"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "accountnumber": {
+                    "type": "string"
+                  }
+                },
+                "x-apifox-orders": [
+                  "accountnumber"
+                ],
+                "required": [
+                  "accountnumber"
+                ],
+                "x-apifox-ignore-properties": []
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {},
+                  "x-apifox-orders": [
+                    "01H2QEZZ1M9K8J5Q0QC38HVB7B"
+                  ],
+                  "required": [
+                    "01H2QEZZ1M9K8J5Q0QC38HVB7B"
+                  ],
+                  "x-apifox-ignore-properties": []
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox": "https://apifox.com/web/project/2747517/apis/api-88324069-run"
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  },
+  "servers": []
+}
