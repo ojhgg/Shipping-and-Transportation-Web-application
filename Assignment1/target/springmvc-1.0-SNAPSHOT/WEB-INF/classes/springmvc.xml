@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!-- 开启 扫描 -->
+    <!-- 开启注解扫描,只扫描mvc注解 -->
+    <context:component-scan base-package="com.service, com.entity, com.Controller">
+        <!-- 只扫描指定包下的Controller注解 -->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
+    </context:component-scan>
+    <!--处理器映射器，处理器适配器-->
+    <!--注册最合适的处理器适配器-->
+    <mvc:annotation-driven
+            ignore-default-model-on-redirect="true"
+            enable-matrix-variables="true"
+    />
+
+    <!--配置springmvc视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3307/shipping" />
+        <property name="username" value="root" />
+        <property name="password" value="123456" />
+    </bean>
+
+    <!-- 配置JPA事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+    <!-- 配置JPA实体管理器工厂 -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan" value="com.entity" />
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="database" value="MYSQL" />
+                <property name="showSql" value="true" />
+            </bean>
+        </property>
+    </bean>
+</beans>
